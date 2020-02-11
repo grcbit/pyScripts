@@ -3,6 +3,8 @@
 #Hello World ante una peticion GET /
 #Python3
 #---------------------------------------------------------
+import os
+
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 class handler_class(BaseHTTPRequestHandler):
