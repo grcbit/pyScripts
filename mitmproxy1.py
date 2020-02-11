@@ -2,6 +2,8 @@
 #Script mitmproxy que guarda una sesion HTTP 
 #Los datos se guardan en un diccionario y archivo
 #-------------------------------------------------
+import os
+
 def response(flow):
     rFlow = {}
     rContent = ''
