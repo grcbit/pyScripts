@@ -12,14 +12,10 @@ class handler_class(BaseHTTPRequestHandler):
         message = "Hello world!"
         self.wfile.write(bytes(message))
 
-#def run(server_class=HTTPServer, handler_class=BaseHTTPRequestHandler):
 def run(server_class=HTTPServer):
     server_address = ('', 8003)
     httpd = server_class(server_address, handler_class)
     httpd.serve_forever()
-
-def hello():
-    return
 
 if __name__ == "__main__":
     run()
