@@ -1,0 +1,11 @@
+#Para pasar un número variable de argumentos a una función. 
+#Los argumentos pasados a la función no están identificados por una clave (non-key worded).
+
+>>> def funcion(*argv):
+...     for arg in argv:
+...         print(arg)
+... 
+>>> funcion('a','b','c')
+a
+b
+c
