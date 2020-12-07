@@ -1,0 +1,9 @@
+#Utilizado para pasar un numero de variables de argumentos identificados con una clave.
+
+>>> def funcion(**kwargs):
+...     for k,v in kwargs.items():
+...         print("%s = %s" %(k,v))
+>>> funcion(f='a', s='b', t='c')
+f = a
+s = b
+t = c
